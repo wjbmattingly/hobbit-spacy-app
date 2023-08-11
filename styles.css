@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Hobbiton Handscrawl';
+    src: url('data:font/truetype;charset=utf-8;base64,BASE64_STRING_HERE') format('truetype');
+}
+
+
+html, body, [class*="css"] {
+    font-family: 'Hobbiton Handscrawl';
+    font-size: 18px;
+    font-weight: 500;
+    color: #091747;
+}

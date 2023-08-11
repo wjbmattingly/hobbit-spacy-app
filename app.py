@@ -3,6 +3,25 @@ import spacy
 from spacy import displacy
 
 
+st.markdown("""
+    <style>
+        @font-face {
+            font-family: 'Hobbiton Handscrawl';
+            src: url('HobbitonHandscrawlRegular-eZA3.ttf') format('truetype');
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+        html, body, [class*="css"] {
+            font-family: 'Hobbiton Handscrawl', 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #091747;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+
 st.markdown("""[![Hobbit spaCy on PyPI](https://img.shields.io/pypi/v/en-hobbit.svg)](https://pypi.org/project/en-hobbit/)
 ![Stars](https://img.shields.io/github/stars/wjbmattingly/hobbit-spacy.svg?style=social)
 ![Forks](https://img.shields.io/github/forks/wjbmattingly/hobbit-spacy.svg?style=social)""")
