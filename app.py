@@ -3,32 +3,6 @@ import spacy
 from spacy import displacy
 
 
-st.markdown("""
-    <style>
-        @font-face {
-            font-family: 'Hobbiton Handscrawl';
-            src: url('https://raw.githubusercontent.com/wjbmattingly/hobbit-spacy-app/main/font/HobbitonBrushhandhobbitonBrush-WygA.ttf') format('truetype');
-        }
-
-        html, body, [class*="css"] {
-            font-family: 'Hobbiton Handscrawl', 'Roboto', sans-serif;
-            font-size: 18px;
-            line-height: 1.5;
-            letter-spacing: 0.1em;
-        }
-
-        .specialMarkdown {
-            font-family: 'Hobbiton Handscrawl', 'Roboto', sans-serif;
-            font-size: 18px;
-            line-height: 1.5;
-            letter-spacing: 0.1em;
-            border: 2px solid #3e2b0a;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            padding: 10px; /* Add padding inside the border */
-        }
-    </style>
-""", unsafe_allow_html=True)
-
 
 
 
@@ -38,7 +12,33 @@ st.markdown("""[![Hobbit spaCy on PyPI](https://img.shields.io/pypi/v/en-hobbit.
 ![Forks](https://img.shields.io/github/forks/wjbmattingly/hobbit-spacy.svg?style=social)""")
 
 st.image("https://github.com/wjbmattingly/hobbit-spacy/raw/main/images/hobbitspacy.png")
+if st.checkbox("Bilbo Mode"):
+    st.balloons()
+    st.markdown("""
+        <style>
+            @font-face {
+                font-family: 'Hobbiton Handscrawl';
+                src: url('https://raw.githubusercontent.com/wjbmattingly/hobbit-spacy-app/main/font/HobbitonBrushhandhobbitonBrush-WygA.ttf') format('truetype');
+            }
 
+            html, body, [class*="css"] {
+                font-family: 'Hobbiton Handscrawl', 'Roboto', sans-serif;
+                font-size: 18px;
+                line-height: 1.5;
+                letter-spacing: 0.1em;
+            }
+
+            .specialMarkdown {
+                font-family: 'Hobbiton Handscrawl', 'Roboto', sans-serif;
+                font-size: 18px;
+                line-height: 1.5;
+                letter-spacing: 0.1em;
+                border: 2px solid #3e2b0a;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                padding: 10px; /* Add padding inside the border */
+            }
+        </style>
+    """, unsafe_allow_html=True)
 @st.cache_resource
 def load_model():
     nlp = spacy.load("en_hobbit")
