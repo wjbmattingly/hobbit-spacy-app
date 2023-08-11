@@ -13,12 +13,22 @@ st.markdown("""
         html, body, [class*="css"] {
             font-family: 'Hobbiton Handscrawl', 'Roboto', sans-serif;
             font-size: 18px;
-            font-weight: 200;
-            color: #091747;
-            line-height: 1.5; /* Adjust the line-height here */
+            line-height: 1.5;
+            letter-spacing: 0.1em;
+        }
+
+        .specialMarkdown {
+            font-family: 'Hobbiton Handscrawl', 'Roboto', sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            letter-spacing: 0.1em;
+            border: 2px solid #3e2b0a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 10px; /* Add padding inside the border */
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 
@@ -61,4 +71,4 @@ options = load_options()
 text = st.text_area("Paste Text", "Frodo son of Drogo went to Mordor with Sam, Strider, also known as Aragorn, Gandalf and others. He carried the sword of Bilbo Baggins. This sword was called Sting. Gondor is a realm whose capital is Minis Tirith.")
 doc = nlp(text+"\n\n.")
 html= displacy.render(doc, style="span", options=options)
-st.write(html, unsafe_allow_html=True)
+st.write(f"<div class='specialMarkdown'>{html}</div>", unsafe_allow_html=True)

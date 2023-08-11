@@ -7,3 +7,5 @@
 # Hobbit spaCy Application
 
 This is a simple Streamlit application for Hobbit spaCy.
+
+Font is from here: https://www.fontspace.com/hobbiton-brushhand-font-f2253
