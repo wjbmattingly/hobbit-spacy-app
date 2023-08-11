@@ -7,19 +7,20 @@ st.markdown("""
     <style>
         @font-face {
             font-family: 'Hobbiton Handscrawl';
-            src: url('HobbitonHandscrawlRegular-eZA3.ttf') format('truetype');
+            src: url('https://raw.githubusercontent.com/wjbmattingly/hobbit-spacy-app/main/font/HobbitonHandscrawlRegular-eZA3.ttf') format('truetype');
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
         html, body, [class*="css"] {
-            font-family: 'Hobbiton Handscrawl', 'Roboto', sans-serif;
+            font-family: 'Hobbiton Handscrawl';
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 200;
             color: #091747;
+            line-height: 1.5; /* Adjust the line-height here */
         }
     </style>
 """, unsafe_allow_html=True)
+
+
 
 
 st.markdown("""[![Hobbit spaCy on PyPI](https://img.shields.io/pypi/v/en-hobbit.svg)](https://pypi.org/project/en-hobbit/)
@@ -58,6 +59,6 @@ nlp = load_model()
 options = load_options()
 
 text = st.text_area("Paste Text", "Frodo son of Drogo went to Mordor with Sam, Strider, also known as Aragorn, Gandalf and others. He carried the sword of Bilbo Baggins. This sword was called Sting. Gondor is a realm whose capital is Minis Tirith.")
-doc = nlp(text)
+doc = nlp(text+"\n\n.")
 html= displacy.render(doc, style="span", options=options)
 st.write(html, unsafe_allow_html=True)
