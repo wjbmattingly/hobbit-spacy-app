@@ -2,7 +2,7 @@
 ![Stars](https://img.shields.io/github/stars/wjbmattingly/hobbit-spacy.svg?style=social)
 ![Forks](https://img.shields.io/github/forks/wjbmattingly/hobbit-spacy.svg?style=social)
 
-![Hobbit spaCy](images/hobbitspacy.png)
+![Hobbit spaCy](https://github.com/wjbmattingly/hobbit-spacy/raw/main/images/hobbitspacy.png)
 
 # Hobbit spaCy Application
 
