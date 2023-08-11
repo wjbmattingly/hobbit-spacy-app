@@ -7,11 +7,11 @@ st.markdown("""
     <style>
         @font-face {
             font-family: 'Hobbiton Handscrawl';
-            src: url('https://raw.githubusercontent.com/wjbmattingly/hobbit-spacy-app/main/font/HobbitonHandscrawlRegular-eZA3.ttf') format('truetype');
+            src: url('https://raw.githubusercontent.com/wjbmattingly/hobbit-spacy-app/main/font/HobbitonBrushhandhobbitonBrush-WygA.ttf') format('truetype');
         }
 
         html, body, [class*="css"] {
-            font-family: 'Hobbiton Handscrawl';
+            font-family: 'Hobbiton Handscrawl', 'Roboto', sans-serif;
             font-size: 18px;
             font-weight: 200;
             color: #091747;
