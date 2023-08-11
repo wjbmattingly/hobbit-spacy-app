@@ -1,0 +1,1 @@
+This is a simple Streamlit application for Hobbit spaCy.
