@@ -13,7 +13,6 @@ st.markdown("""[![Hobbit spaCy on PyPI](https://img.shields.io/pypi/v/en-hobbit.
 
 st.image("https://github.com/wjbmattingly/hobbit-spacy/raw/main/images/hobbitspacy.png")
 if st.checkbox("Bilbo Mode"):
-    st.balloons()
     st.markdown("""
         <style>
             @font-face {
