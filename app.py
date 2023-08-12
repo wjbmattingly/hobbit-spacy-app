@@ -68,7 +68,7 @@ def load_options():
 nlp = load_model()
 options = load_options()
 
-text = st.text_area("Paste Text", "Frodo son of Drogo went to Mordor with Sam, Strider, also known as Aragorn, Gandalf and others. He carried the sword of Bilbo Baggins. This sword was called Sting. Gondor is a realm whose capital is Minis Tirith.")
+text = st.text_area("Paste Text", "Frodo son of Drogo went to Mordor with Sam, Strider, also known as Aragorn, Gandalf and others. He carried the sword of Bilbo Baggins. This sword was called Sting. Gondor is a realm whose capital is Minas Tirith.")
 doc = nlp(text+"\n\n.")
 html= displacy.render(doc, style="span", options=options)
 st.write(f"<div class='specialMarkdown'>{html}</div>", unsafe_allow_html=True)
